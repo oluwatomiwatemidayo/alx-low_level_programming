@@ -11,12 +11,9 @@ int main(void)
 {
 	int n;
 
-	for (n = 97; n <= 122; ++n)
+	for (n = 0; n < 10; ++n)
 	{
-		if (n != 101 && n != 113)
-		{
-			putchar(n);
-		}
+		printf("%d", n);
 	}
 	putchar(10);
 	return (0);
