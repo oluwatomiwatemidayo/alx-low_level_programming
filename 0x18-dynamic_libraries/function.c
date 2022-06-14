@@ -1,56 +1,76 @@
+<<<<<<< HEAD
+=======
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
+>>>>>>> 151681b80b24ef40a76966a521911bf957dfc900
 /**
- * add - addition operator
- * @a: first int
- * @b: second int
- * Return: sum of 2 numbers
+ * op_add - adds two numbers.
+ * @a: first number.
+ * @b: second number.
+ *
+ * Return: add.
  */
-int add(int a, int b)
+int op_add(int a, int b)
 {
 	return (a + b);
 }
 
 /**
- * sub - subtraction operator
- * @a: first in
- * @b: second int
- * Return: difference of 2 numbers
+ * op_sub - subctracts two numbers.
+ * @a: first number.
+ * @b: second number.
+ *
+ * Return: difference.
  */
-int sub(int a, int b)
+int op_sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
- * mul - product of 2 numbers
- * @a: first int
- * @b: second int
- * Return: product of the numbers
+ * op_mul - multiplies two numbers.
+ * @a: first number.
+ * @b: second number.
+ *
+ * Return: multiplication.
  */
-int mul(int a, int b)
+int op_mul(int a, int b)
 {
 	return (a * b);
 }
 
 /**
- * div - division of 2 numbers
- * @a: first int
- * @b: second int
- * Return: result of the division of the numbers
+ * op_div - divides two numbers.
+ * @a: first number.
+ * @b: second number.
+ *
+ * Return: division.
  */
-int div(int a, int b)
+int op_div(int a, int b)
 {
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	return (a / b);
 }
 
 /**
- * mod - get remainder of the division of 2 numbers
- * @a: first int
- * @b: second int
- * Return: remainder of division of the numbers
+ * op_mod - calculates the module of two numbers.
+ * @a: first number.
+ * @b: second number.
+ *
+ * Return: remainder of the division.
  */
-int mod(int a, int b)
+int op_mod(int a, int b)
 {
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	return (a % b);
 }
